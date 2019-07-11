@@ -1,0 +1,17 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/.local/bin:$HOME/bin
+
+export PATH
+
+# Oracle Client 19c environment variables:
+export ORACLE_HOME=/opt/oracle/instantclient_19_3
+export LD_LIBRARY_PATH="$ORACLE_HOME"
+export PATH="$ORACLE_HOME:$PATH"
